@@ -1,6 +1,6 @@
 import { PublicError } from "./errors";
 
-const MAX_UPSTREAM_BYTES = 1_000_000;
+const MAX_UPSTREAM_BYTES = 10_000_000;
 
 export async function readBoundedJson(response: Response): Promise<unknown> {
   if (response.body === null) return null;
